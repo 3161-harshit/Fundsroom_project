@@ -1,86 +1,225 @@
-<h1 align="center">🚀 TaskFlow – Team Task Management System</h1>
+<h1 align="center">🚀 TaskFlow</h1>
 
 <p align="center">
-<b>Full Stack Web Application & Backend Service</b><br>
-Designed for Software Engineering Placement Drives
+Full Stack Team Task Management System
 </p>
 
 <p align="center">
 
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
-![NodeJS](https://img.shields.io/badge/Node.js-20-339933?logo=node.js)
-![Express](https://img.shields.io/badge/Express.js-Backend-black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)
-![Gemini](https://img.shields.io/badge/Gemini-AI-blueviolet)
-![License](https://img.shields.io/badge/License-MIT-red)
+<img src="https://img.shields.io/badge/React-18-61DAFB?logo=react"/>
+<img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript"/>
+<img src="https://img.shields.io/badge/Node.js-20-339933?logo=node.js"/>
+<img src="https://img.shields.io/badge/Express.js-Backend-black"/>
+<img src="https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql"/>
+<img src="https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker"/>
+<img src="https://img.shields.io/badge/Gemini-AI-blueviolet"/>
+<img src="https://img.shields.io/badge/License-MIT-red"/>
 
 </p>
 
 ---
 
-# 📌 Project Overview
+# 📌 Overview
 
-TaskFlow is a **modern Full Stack Team Task Management System** developed for software engineering placement interviews.
+TaskFlow is a modern **Full Stack Team Task Management Platform** built using **React, Express.js, PostgreSQL, Docker, TypeScript, and Google Gemini AI**.
 
-It demonstrates enterprise software development using **React, Express.js, PostgreSQL, Docker, JWT Authentication, TypeScript**, and **Google Gemini AI**.
+The application enables users to create projects, manage tasks, monitor progress, and securely access backend services through a protected administrator panel.
 
-The application enables teams to manage projects, assign tasks, monitor progress, and collaborate efficiently while showcasing production-level architecture.
+It was designed to demonstrate enterprise software engineering concepts including scalable architecture, REST APIs, authentication, database design, and Docker containerization.
 
 ---
 
 # ✨ Features
 
-- ✅ User Authentication (JWT)
-- ✅ Secure Password Hashing
+- ✅ User Authentication
 - ✅ Project Management
 - ✅ Task Assignment
-- ✅ Priority Management
-- ✅ Status Tracking
+- ✅ Task Priority
+- ✅ Task Status Tracking
 - ✅ PostgreSQL Database
-- ✅ REST API
-- ✅ Docker Containerization
-- ✅ Responsive React UI
-- ✅ Gemini AI Integration
-- ✅ Clean Modular Architecture
+- ✅ JWT Authentication
+- ✅ Express REST API
+- ✅ Docker Compose
+- ✅ AI Technical Interview
+- ✅ Responsive Design
+- ✅ Administrator Dashboard
 
 ---
 
-# 🏗️ System Architecture
+# 📸 Application Screenshots
+
+## 🏠 Home Dashboard
+
+<p align="center">
+
+<img src="assets/homepage.png" width="100%"/>
+
+</p>
+
+### Highlights
+
+- Project Dashboard
+- Task Statistics
+- Search Tasks
+- Create Projects
+- Add Tasks
+- Responsive Layout
+
+---
+
+## 🔐 Backend & Docker
+
+<p align="center">
+
+<img src="assets/backend-docker.png" width="100%"/>
+
+</p>
+
+### Highlights
+
+- Secure Administrator Login
+
+- Express Backend
+
+- Docker Integration
+
+- PostgreSQL Connection
+
+- Protected APIs
+
+---
+
+## 🤖 Technical Mock Interview
+
+<p align="center">
+
+<img src="assets/technical-interview.png" width="100%"/>
+
+</p>
+
+---
+
+## 📊 Drive Overview
+
+<p align="center">
+
+<img src="assets/drive-overview.png" width="100%"/>
+
+</p>
+
+---
+
+# 🏗️ Architecture
 
 ```
-                        CLIENT (React + TypeScript)
-                                   │
-                          HTTP REST API
-                                   │
-                ┌──────────────────┴──────────────────┐
-                │                                     │
-        Express Backend                      Gemini AI API
-                │
-                │
-          PostgreSQL Database
+                    Browser
+
+                       │
+
+               React Frontend
+
+                       │
+
+              Express REST API
+
+                       │
+
+      JWT Authentication Middleware
+
+                       │
+
+                PostgreSQL Database
+
+                       │
+
+                Docker Containers
+
+                       │
+
+               Google Gemini API
 ```
 
 ---
 
 # ⚙️ Technology Stack
 
-| Technology | Purpose |
-|------------|---------|
-| React 18 | Frontend |
-| TypeScript | Type Safety |
-| Tailwind CSS | Styling |
-| Express.js | Backend |
-| Node.js | Runtime |
-| PostgreSQL | Database |
-| JWT | Authentication |
-| Docker | Containerization |
-| Gemini API | AI Features |
+| Frontend | Backend | Database | DevOps | AI |
+|-----------|----------|-----------|----------|-----|
+| React | Express | PostgreSQL | Docker | Gemini |
+| Tailwind CSS | Node.js | SQL | Docker Compose | Google AI |
+| TypeScript | JWT | Indexing | Nginx | Interview Assistant |
 
 ---
 
-# 🗄️ Database Design
+# 📂 Folder Structure
+
+```
+TaskFlow
+
+├── client
+
+├── server
+
+├── database
+
+├── docker
+
+├── assets
+
+│     ├── homepage.png
+
+│     ├── backend-docker.png
+
+│     ├── technical-interview.png
+
+│     └── drive-overview.png
+
+├── README.md
+
+├── package.json
+
+└── docker-compose.yml
+```
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/taskflow.git
+
+cd taskflow
+
+npm install
+
+npm run dev
+```
+
+---
+
+# 🐳 Docker
+
+```bash
+docker-compose up --build
+```
+
+---
+
+# 🔌 REST APIs
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | /api/projects | Fetch Projects |
+| GET | /api/tasks | Fetch Tasks |
+| POST | /api/tasks | Create Task |
+| PUT | /api/tasks/:id | Update Task |
+| DELETE | /api/tasks/:id | Delete Task |
+| POST | /api/admin/login | Administrator Login |
+| GET | /api/system/info | Server Information |
+
+---
+
+# 🗄️ Database
 
 Main Tables
 
@@ -89,179 +228,18 @@ Main Tables
 - Tasks
 - Login History
 
-### Relationships
-
-```
-Users
-   │
-   ├────────── Projects
-                    │
-                    ├──────── Tasks
-```
-
-Composite indexing is used to improve task filtering performance.
+Composite indexes are implemented for faster querying.
 
 ---
 
-# 🔌 REST API
+# 📈 Future Scope
 
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| GET | /api/tasks | Get Tasks |
-| POST | /api/tasks | Create Task |
-| PUT | /api/tasks/:id | Update Task |
-| DELETE | /api/tasks/:id | Delete Task |
-| POST | /api/admin/login | Admin Login |
-| GET | /api/system/info | System Information |
-
----
-
-# 🐳 Docker Architecture
-
-```
-Docker Compose
-
-├── Frontend Container
-│
-├── Backend Container
-│
-└── PostgreSQL Container
-```
-
-One command starts the complete application.
-
-```
-docker-compose up
-```
-
----
-
-# 📂 Project Structure
-
-```
-TaskFlow
-│
-├── client
-│   ├── src
-│   ├── components
-│   ├── pages
-│   └── assets
-│
-├── server
-│   ├── routes
-│   ├── middleware
-│   ├── controllers
-│   ├── database
-│   └── models
-│
-├── docker-compose.yml
-├── package.json
-├── README.md
-└── .env.example
-```
-
----
-
-# 🚀 Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/taskflow.git
-
-cd taskflow
-```
-
-Install packages
-
-```bash
-npm install
-```
-
-Create environment file
-
-```env
-PORT=3000
-
-DATABASE_URL=your_database_url
-
-JWT_SECRET=your_secret
-
-GEMINI_API_KEY=your_api_key
-```
-
-Run
-
-```bash
-npm run dev
-```
-
----
-
-# 📸 Screenshots
-
-### Home Page
-
-> Add screenshot here
-
----
-
-### Dashboard
-
-> Add screenshot here
-
----
-
-### Task Board
-
-> Add screenshot here
-
----
-
-# 📈 Future Improvements
-
-- Notification System
-- Email Integration
+- Email Notifications
 - Team Chat
-- Calendar View
-- File Uploads
+- Calendar
+- File Upload
+- AI Task Suggestions
 - Analytics Dashboard
-- AI Project Suggestions
-
----
-
-# 🎯 Why This Project?
-
-This project demonstrates:
-
-- Full Stack Development
-- REST API Design
-- Authentication
-- Database Design
-- Docker Deployment
-- Enterprise Folder Structure
-- Production Ready Code
-- AI Integration
-
-Perfect for:
-
-- Software Engineering Placements
-- Portfolio Projects
-- GitHub Showcase
-- Resume
-- Interviews
-
----
-
-# ⭐ Repository Statistics
-
-If you found this project useful,
-
-⭐ Star this repository
-
-🍴 Fork this repository
-
-📢 Share with others
 
 ---
 
@@ -269,7 +247,7 @@ If you found this project useful,
 
 **Harshit**
 
-B.Tech CSE
+B.Tech Computer Science & Engineering
 
 KIIT University
 
@@ -277,6 +255,6 @@ KIIT University
 
 <p align="center">
 
-Made with ❤️ using React • Node.js • PostgreSQL • Docker
+⭐ If you found this project useful, consider giving it a star.
 
 </p>
