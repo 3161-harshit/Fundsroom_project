@@ -1,0 +1,6 @@
+{
+  "name": "Fundsroom Drive Prep Companion",
+  "description": "Interactive AI placement drive companion for Fundsroom Infotech Fullstack Developer Intern role at KIIT, featuring AI mock interviews, SQL/React coding arena, Superset Q&A optimizer, and technical cheat sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
